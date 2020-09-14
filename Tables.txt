@@ -1,0 +1,15 @@
+create table customer(customerid int primary key,name char(20),mobilenumber bigint,mobileid int);
+
+create table login(username varchar(20),password varchar(20));
+
+create table mobile(mobileID int primary key,mobilename char(20),type varchar(20),color char(10),companyname char(25),price int,quantity int);
+
+create table payment(payId int primary key,paydate date,amount int,customerid int);
+
+create table register(username char(20),newpassword varchar(20));
+
+create table service(serviceid int primary key,mobileid int,phoneno bigint);
+
+create table shop(shopid int primary key,shopname char(25),address varchar(20),customerid int);
+
+create table stock(stockid int primary key,stopnumber int,stockitems varchar(20),shopid int);
